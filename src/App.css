@@ -1,0 +1,105 @@
+/* App.css */
+
+/* Container to center everything */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ece5e4;
+}
+
+.card {
+  background-image: url('./ARGENT.jpg'); /* Remplace par ton image */
+  background-size: cover; /* Ajuste l'image pour couvrir tout le card */
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Évite la répétition de l'image */
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  background-color: rgba(253, 249, 249, 0.993);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ee1008;
+  color: white;
+}
+
+.header img {
+  height: 50px;
+}
+
+.header span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Video background */
+.video {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Change the height as needed */
+  overflow: hidden;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Icon grid */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(241, 242, 245, 0.986);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon-button i {
+  font-size: 30px;
+  color: #f0f1f3;
+}
+
+.icon-button span {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #fcf9f9;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #d43115;
+  color: white;
+  font-size: 14px;
+}
+

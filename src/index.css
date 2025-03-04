@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personnalisation du style des boutons */
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* Style du champ de saisie */
+input {
+  font-size: 18px;
+}
+
+/* Ajout d'une ombre subtile sur les boutons */
+button {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet sur les boutons "Annuler" et "Valider" */
+button.bg-red-500:hover {
+  background-color: #c53030;
+}
+
+button.bg-green-500:hover {
+  background-color: #2f855a;
+}
+
+/* Centrage du contenu */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style spécifique du logo */
+img {
+  border-radius: 10px;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-center {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
