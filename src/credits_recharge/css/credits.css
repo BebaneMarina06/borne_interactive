@@ -1,0 +1,101 @@
+.recharge-interface {
+    max-width: 50%; /* Augmenté pour ressembler à l'image */
+    margin: 5px auto;
+    padding: 1px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Instructions */
+.instructions {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    /* margin-bottom: 30px; */
+}
+
+/* Numéro de téléphone */
+.phone-number input {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Conteneur pour bien placer le clavier et l'input */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Clavier numérique */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Colonnes fixes */
+    gap: 10px;
+    margin-left: 50px; /* Pour le placer à droite */
+}
+
+.keypad button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.keypad button:hover {
+    background-color: #003d82;
+}
+
+/* Actions : Boutons Annuler et Valider */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.actions button {
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+.actions button:first-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.actions button:first-child:hover {
+    background-color: #c82333;
+}
+
+.actions button:last-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.actions button:last-child:hover {
+    background-color: #218838;
+}
+

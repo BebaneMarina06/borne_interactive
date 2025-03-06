@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Correction : 'Link' au lieu de 'link'
-import './App.css'; // Importation du fichier CSS
-import Canal1 from './Canal1'; // Assure-toi que le chemin est correct
+import './App.css'; 
+import Canal1 from './Canal1'; 
 import artelLogo from './assets/images/airtel.png';
 import moovLogo from './assets/images/moov.png';
+import Credits  from './credits_recharge/credits'
 
 // Composant App
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
       {/* Routes pour les différentes pages */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/credit" element={<CreditPage />} />
+        <Route path="/credits" element={<Credits />} />
         <Route path="/Canal1" element={<Canal1 />} />
         <Route path="/seeg" element={<SeegPage />} />
         <Route path="/mobile-money" element={<MobileMoneyPage />} />
@@ -46,7 +47,7 @@ const Home = () => {
 
           {/* Icon Buttons */}
           <div className="icon-grid">
-            <Link to="/credit">
+            <Link to="/credits">
               <button className="icon-button" style={{ backgroundColor: "#FFFF" }}>
                 <div class="airtel-moov">
                   <img src={artelLogo} alt="Logo-airtel" />
@@ -98,7 +99,7 @@ const Home = () => {
 };
 
 // Pages pour chaque service
-const CreditPage = () => <h2>Page Crédit de communication</h2>;
+// const CreditPage = () => <h2>Page Crédit de communication</h2>;
 const SeegPage = () => <h2>Page SEEG</h2>;
 const MobileMoneyPage = () => <h2>Page Recharge Mobile Money</h2>;
 const PmugPage = () => <h2>Page PMUG</h2>;
