@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './css/credits.css';
+import artelLogo from '../assets/images/airtel.png';
+import moovLogo from '../assets/images/moov.png';
+
 
 const Credits = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -9,8 +12,8 @@ const Credits = () => {
   };
 
   const handleValidate = () => {
-    alert(`Numéro ${phoneNumber} rechargé avec succès!`);
-    setPhoneNumber('');
+    alert(`Numéro ${phoneNumber} rechargé avec succès!`);  
+     setPhoneNumber('');
   };
 
   const handleCancel = () => {
@@ -19,10 +22,12 @@ const Credits = () => {
 
   return (
     <div className="recharge-interface">
+      <div className="titre">
       <h1>Crédit de communication</h1>
-      <div className="instructions">
-       
-        
+      <div class="airtel-moov">
+                  <img src={artelLogo} alt="Logo-airtel" />
+                  <img src={moovLogo} alt="Logo-moov" />
+                </div>
       </div>
 
       <div className="form-container">

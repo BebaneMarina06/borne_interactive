@@ -12,11 +12,19 @@
 }
 
 /* Instructions */
-.instructions {
-    width: 100%;
-    text-align: left;
-    font-size: 15px;
-    /* margin-bottom: 30px; */
+.titre {
+   display: flex;
+   margin-right: 150px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+h1{
+    margin-right: 20px;
 }
 
 /* Numéro de téléphone */
