@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; // Correction : 'Link' au lieu de 'link'
 import './App.css'; // Importation du fichier CSS
 import Canal1 from './Canal1'; // Assure-toi que le chemin est correct
+import artelLogo from './assets/images/airtel.png';
+import moovLogo from './assets/images/moov.png';
 
 // Composant App
 const App = () => {
@@ -44,9 +46,12 @@ const Home = () => {
 
           {/* Icon Buttons */}
           <div className="icon-grid">
-            <Link to="/credit"> {/* Lien vers la page Crédit */}
-              <button className="icon-button" style={{ backgroundColor: "#060886" }}>
-                <i className="fas fa-mobile-alt"></i>
+            <Link to="/credit">
+              <button className="icon-button" style={{ backgroundColor: "#FFFF" }}>
+                <div class="airtel-moov">
+                  <img src={artelLogo} alt="Logo-airtel" />
+                  <img src={moovLogo} alt="Logo-moov" />
+                </div>
                 <span>crédit de communication</span>
               </button>
             </Link>
@@ -72,6 +77,12 @@ const Home = () => {
               <button className="icon-button" style={{ backgroundColor: "#020c35" }}>
                 <i className="fas fa-utensils"></i>
                 <span>RESTAURANT</span>
+              </button>
+            </Link>
+            <Link to="/Canal1"> {/* Lien vers la page Restaurant */}
+              <button className="icon-button" style={{ backgroundColor: "#020c35" }}>
+                <i className="fas fa-utensils"></i>
+                <span>Canal</span>
               </button>
             </Link>
           </div>

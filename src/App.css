@@ -85,11 +85,18 @@
   font-size: 30px;
   color: #f0f1f3;
 }
-
+.airtel-moov{
+  display: flex;
+  justify-content: space-between;
+}
+img{
+  height: 50px;
+}
 .icon-button span {
   margin-top: 5px;
   font-size: 14px;
-  color: #fcf9f9;
+  font-weight: bold;
+
 }
 
 .icon-button:hover {
